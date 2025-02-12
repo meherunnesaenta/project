@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer Dashboard</title>
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header">
+        <h2>Help2Hand</h2>
+        <ul>
+            <li><a href="index.html" id="active">Home</a></li>
+            <li><a href="campaigns.html">Campaigns</a></li>
+            <li><a href="procedure.html">Procedure To Help</a></li>
+        </ul>
+        <button><a href="../php/logout.php">Logout</a></button>
+    </div>
+  </header>
+
+  <!-- Main Dashboard Content -->
+  <div class="dashboard-section">
+    <h2>Registered Users</h2>
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Profile Picture</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody">
+        <!-- Dynamic rows will be appended here -->
+      </tbody>
+    </table>
+  </div>
+  
+
+  <!-- Footer -->
+  <footer>
+        
+    <div class="foot">
+      <!-- Contact Section -->
+      <div >
+         <h4>Contact Us</h4>
+         <p>Email: <a href="mailto:support@winterdonation.org" style="color: #58a6ff;">support@winterdonation.org</a></p>
+         <p>Phone: +880-123-456-789</p>
+         <p>Address: House 12, Road 5, Dhaka, Bangladesh</p>
+     </div>
+
+     <!-- Follow Us Section -->
+     <div>
+         <h4 >Follow Us</h4>
+      <a href="https://www.facebook.com/meherunnesa.enta.1" ><img src="../image/2021_Facebook_icon.svg"></a> <!-- Facebook Icon -->
+      <a href="#" ><img src="../image/twitter.png"></a> <!-- X/Twitter Icon -->
+      <a href="https://www.instragram.com" ><img src="../image/instra.png"></a> 
+      <a href="https://www.linkdin.com" ><img src="../image/linkdin.png"></a>
+     </div>
+     <div>
+         <h4 >About Us</h4>
+         <p> Donation  platform connecting donors with volunteers to provide warm clothing  to the needy across Bangladesh.</p>
+     </div>
+    </div>
+</footer>
+
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>

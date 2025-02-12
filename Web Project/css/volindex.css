@@ -1,0 +1,181 @@
+/* General container styling */
+.profile-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+/* Profile Picture Section */
+.profile-pic-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic-section img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #007bff;
+}
+
+.profile-pic-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic-section input {
+  font-size: 14px;
+  padding: 5px;
+}
+
+.profile-pic-section button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.profile-pic-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Profile Information Section */
+/* Styling the profile container */
+.profile-card {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Header of the profile card */
+.profile-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Individual information items */
+.info-item {
+  margin-bottom: 15px;
+}
+
+.info-item label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.info-item p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+  padding: 5px;
+  background: #e9e9e9;
+  border-radius: 5px;
+}
+
+/* Error message styling */
+#error-message {
+  font-size: 14px;
+  color: red;
+  text-align: center;
+}
+
+
+/* Post Section */
+.post-section {
+  grid-column: span 2;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+}
+
+.post-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.post-section textarea {
+  resize: none;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-height: 100px;
+  background-color: #fdfdfd;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.post-section textarea:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.post-section input {
+  font-size: 14px;
+}
+
+.post-section button {
+  align-self: flex-start;
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.post-section button:hover {
+  background-color: #218838;
+}
+
+/* Previous Posts */
+#posts {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#posts .post {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,76 @@
+/* Styling the campaign container */
+.campaign-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: Arial, sans-serif;
+}
+
+/* Section title styling */
+.campaign-container h3 {
+  font-size: 1.8rem;
+  color: #333; /* Dark text for readability */
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Posts container */
+.campaign-container #posts {
+  display: grid; /* Use grid for responsive layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-adjust columns */
+  gap: 20px; /* Space between posts */
+}
+
+/* Individual post styling */
+.campaign-container .post-item {
+  background-color: #ffffff; /* White background for posts */
+  padding: 15px;
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for posts */
+.campaign-container .post-item:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  background-color: #ffe082;
+}
+
+/* Post content styling */
+.campaign-container .post-item p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Post date styling */
+.campaign-container .post-item small {
+  font-size: 0.85rem;
+  color: #888;
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .campaign-container {
+      padding: 15px;
+  }
+
+  .campaign-container h3 {
+      font-size: 1.5rem;
+  }
+
+  .campaign-container #posts {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="../css/volindex.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+        <h2>Help2Hand</h2>
+        <ul>
+            <li><a href="index.html" id="active">Home</a></li>
+            <li><a href="campaigns.html">Campaigns</a></li>
+            <li><a href="procedure.html">Procedure To Help</a></li>
+        </ul>
+        <button><a href="../php/logout.php">Logout</a></button>
+    </div>
+  </header>
+
+  <div class="profile-container">
+    <!-- Profile Picture Section -->
+    <div class="profile-pic-section">
+      <img src="../image/defualt.jpg" alt="Profile Picture" id="profile-pic" class="rounded-circle">
+      <form id="profile-pic-form" enctype="multipart/form-data">
+        <input type="file" name="profile_pic" id="profile-pic-input" accept="image/*" required>
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+    
+    <!-- User Information Section -->
+    <div id="profile-info" class="profile-card">
+      <h2>Your Profile</h2>
+      <div class="info-item">
+        <label>Full Name:</label>
+        <p id="user-name">Loading...</p>
+      </div>
+      <div class="info-item">
+        <label>Email:</label>
+        <p id="user-email">Loading...</p>
+      </div>
+      <div id="error-message" style="display: none; color: red; margin-top: 10px;">
+        Could not load user data. Please try again later.
+      </div>
+    </div>
+
+    <!-- Post Section -->
+    <div class="post-section">
+      <h2>Create a Post</h2>
+      <form id="create-post-form" enctype="multipart/form-data">
+        <textarea name="content" id="post-content" placeholder="Write your post here..." required></textarea>
+        <input type="file" name="post_image" id="post-image-input" accept="image/*">
+        <button type="button" id="submit-post">Post</button>
+      </form>
+    
+      <h3>Your Previous Posts</h3>
+      <div id="posts">
+        <!-- Posts will be dynamically loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© Volunteer is always for you - 2024</p>
+    </div>
+  </footer>
+
+  <script src="../js/volindex.js"></script>
+</body>
+</html>
